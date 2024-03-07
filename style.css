@@ -1,0 +1,207 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    max-width: 100%;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* APPLY TO EACH */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* REUSABLE CLASSES */
+
+.flex {
+    display: flex;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* NAVBAR SEGMENT */
+
+.fullsize {
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.nav {
+    flex: 1;
+    align-items: center;
+}
+
+.left.nav {
+    justify-content: flex-start;
+}
+
+.middle.nav {
+    justify-content: center;
+}
+
+.right.nav {
+    justify-content: flex-end;
+}
+
+.nav ul {
+    gap: 1rem;
+}
+
+/* HERO SEGMENT */
+
+.hero {
+    border: 1px solid black;
+    justify-content: center;
+}
+
+.hero-container {
+    background-image: url(assets/Kitchen_3@2x.png);
+    background-size: cover;
+    height: 900px;
+    width: 95%;
+    border-radius: 50px;
+    flex-shrink: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    max-width: 30%;
+    margin-left: 15rem;
+}
+
+/* PRESENTED PRODUCT */
+
+.large-product {
+    background-image: url(./assets/Mask\ Group\ 12@2x.png);
+    background-size: cover;
+    height: 1000px
+}
+
+
+/* CAROUSEL */
+
+.carousel {
+    padding: 5rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    border: 1px solid black;
+}
+
+.carousel:hover {
+    animation-play-state: paused;
+}
+
+.slideshow {
+    display: inline-block;
+    animation: 35s sliding-action infinite linear;
+}
+
+.slideshow img{
+    height: 415px;
+    width: 535px;
+    margin: 0 2rem;
+    border-radius: 1rem;
+}
+
+@keyframes sliding-action {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.text-overlay {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    color: white;
+    border: 1px solid black;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+/* SHOWCASE */
+
+.showcase {
+    flex-wrap: wrap;
+}
+
+.showcase-products {
+    gap: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.image-container {
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    background-size: cover;
+    animation: showcase-down 0.2s 1 linear;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-container:hover {
+    animation: showcase-up 0.2s 1 linear both;
+}
+
+#product1 {
+    background-image: url(./assets/Green_1@2x.png);
+}
+
+#product2 {
+    background-image: url(./assets/Biom\ fn\ .20@2x.png)
+}
+
+#product3 {
+    background-image: url(./assets/Black_2@2x.png);
+}
+
+@keyframes showcase-up {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5%);
+    }
+}
+
+@keyframes showcase-down {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
