@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -12,9 +11,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-
 
 /* APPLY TO EACH */
 
@@ -31,7 +27,6 @@ a {
     text-decoration: none;
     color: inherit;
 }
-
 
 /* REUSABLE CLASSES */
 
@@ -50,10 +45,6 @@ a {
 .cabin {
     font-family: "Cabin", sans-serif;
 }
-
-
-
-
 
 /* NAVBAR SEGMENT */
 
@@ -148,12 +139,7 @@ a {
     background-color: #FFFFFF;
 }
 
-
-
-
 /* PRESENTED PRODUCT */
-
-
 
 .large-product {
     background-image: url(./assets/Mask\ Group\ 12@2x.png);
@@ -198,12 +184,6 @@ a {
     color: #F0F0F0F0;
 }
 
-.showcase-products {
-    gap: 2rem;
-    flex-wrap: wrap;
-
-}
-
 @keyframes scrolling-action {
     from {
         transform: translateY(120%);
@@ -213,10 +193,6 @@ a {
     }
     
 }
-
-
-
-
 
 /* CAROUSEL */
 
@@ -267,8 +243,6 @@ a {
 
 /* SHOWCASE */
 
-
-
 .image-container {
     width: 400px;
     height: 400px;
@@ -277,6 +251,12 @@ a {
     animation: showcase-down 0.2s 1 linear;
     justify-content: center;
     align-items: center;
+    
+}
+
+.showcase-products {
+    gap: 2rem;
+    flex-wrap: wrap;
 
 }
 
@@ -300,7 +280,7 @@ a {
     from {
         transform: translateY(0);
     }
-
+    
     to {
         transform: translateY(-5%);
     }
@@ -328,7 +308,6 @@ a {
 }
 
 /* VIDEO SECTION */
-
 
 .video-container {
     position: relative;
