@@ -59,7 +59,7 @@ a {
 
 .fullsize {
     padding: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .nav {
@@ -69,32 +69,34 @@ a {
 
 .left.nav {
     justify-content: flex-start;
+    margin-left: 5rem;
 }
 
 .middle.nav {
-    justify-content: center;
+    justify-content: center;;
 }
 
 .right.nav {
     justify-content: flex-end;
+    margin-right: 5rem;
 }
 
 .nav ul {
-    gap: 1rem;
+    gap: 5rem;
 }
 
 /* HERO SEGMENT */
 
 .hero {
-    border: 1px solid black;
     justify-content: center;
 }
 
 .hero-container {
     background-image: url(assets/Kitchen_3@2x.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 110rem;
-    width: 95%;
+    width: 98%;
     border-radius: 50px;
     flex-shrink: 1;
     justify-content: flex-start;
@@ -148,7 +150,6 @@ a {
     overflow: hidden;
     white-space: nowrap;
     position: relative;
-    border: 1px solid black;
 }
 
 .carousel:hover {
@@ -253,7 +254,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 675px;
-    width: 95vw;
+    width: 98%;
     margin: auto;
 }
 
@@ -293,6 +294,11 @@ a {
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     height: 300px;
+    width: 100%;
+}
+
+.media-scroller::-webkit-scrollbar {
+    display: none;
 }
 
 .media-element {
@@ -302,7 +308,7 @@ a {
 }
 
 .media-element.skew {
-    transform: translateY(-7rem);
+    margin-top: 2rem
 }
 
 .link {
@@ -312,3 +318,5 @@ a {
     gap: 2rem;
     
 }
+
+/* FOOTER */
