@@ -125,8 +125,17 @@ a {
 .large-product {
     background-image: url(./assets/Mask\ Group\ 12@2x.png);
     background-size: cover;
-    height: 1000px
+    height: 1000px;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
+
+.top-text {
+    width: 40%
+}
+
+
 
 
 /* CAROUSEL */
@@ -231,4 +240,20 @@ a {
     to {
         transform: translateY(0);
     }
+}
+
+/* VIDEO SECTION */
+
+.video {
+    height: 675px;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text p{
+    width: 60rem;
 }
