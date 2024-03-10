@@ -22,6 +22,9 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 a {
@@ -244,16 +247,68 @@ a {
 
 /* VIDEO SECTION */
 
-.video {
-    height: 675px;
-    align-items: center;
+
+.video-container {
+    position: relative;
     justify-content: center;
+    align-items: center;
+    height: 675px;
+    width: 95vw;
+    margin: auto;
 }
 
-.center-text {
+.video-container video {
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+}
+
+.caption {
     text-align: center;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    color: white;
 }
 
-.center-text p{
-    width: 60rem;
+/* INSTAGRAM SECTION */
+
+.container {
+    width: 100%;
+    align-items: center;
+}
+
+.instagram .container {
+    flex-direction: column;
+    height: 500px;
+}
+
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    height: 300px;
+}
+
+.media-element {
+    height: 200px;
+    width: 200px;
+    background: red;
+}
+
+.media-element.skew {
+    transform: translateY(-7rem);
+}
+
+.link {
+    border: 1px solid #002D33;
+    align-items: center;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    
 }
