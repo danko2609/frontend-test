@@ -125,7 +125,7 @@ a {
 }
 
 .text p {
-    max-width: 50%;
+    max-width: 40%;
     font-size: 3rem;
     line-height: 3.5rem;
     font-weight: 100;
@@ -171,7 +171,7 @@ a {
 }
 
 .animation-container {
-    animation: 12s scrolling-action infinite linear;
+    animation: 12s scrolling-action reverse infinite linear;
 }
 
 .scrolling-text {
@@ -380,6 +380,10 @@ a {
     color: white;
 }
 
+.caption h2 {
+
+}
+
 /* INSTAGRAM SECTION */
 
 .container {
@@ -390,6 +394,11 @@ a {
 .instagram .container {
     flex-direction: column;
     height: 500px;
+}
+
+.instagram .container .title {
+    font-size: 10rem;
+    margin-top: 5rem;
 }
 
 .media-scroller {
@@ -423,7 +432,10 @@ a {
     align-items: center;
     padding: 1rem 2rem;
     gap: 2rem;
+}
 
+.link a img {
+    border-left: 1px solid black;
 }
 
 /* FOOTER */
