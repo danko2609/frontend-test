@@ -137,6 +137,8 @@ a {
     padding: 2rem 4rem;
     width: fit-content;
     background-color: #FFFFFF;
+    font-weight: bold;
+    border-radius: 10px;
 }
 
 /* PRESENTED PRODUCT */
@@ -288,6 +290,16 @@ a {
 
 /* SHOWCASE */
 
+.showcase {
+    justify-content: space-between;
+}
+
+.text-container {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
 .image-container {
     width: 400px;
     height: 400px;
@@ -304,6 +316,8 @@ a {
     flex-wrap: wrap;
 
 }
+
+
 
 .image-container:hover {
     animation: showcase-up 0.2s 1 linear both;
